@@ -15,3 +15,8 @@ Important instructions:
 - Do not repeat the complete project overview.
 - Keep the document short, clear, and specific to BugLens AI.
 - Use simple professional English and bullet points.
+## ChatGPT Conversation Link
+
+This link provides access to the ChatGPT conversation used
+for BugLens AI project planning and development guidance.
+https://chatgpt.com/share/6aeb5c38-0e20-83ee-a7b3-d8a2758d3163
