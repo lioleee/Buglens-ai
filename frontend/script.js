@@ -17,6 +17,7 @@ const analyzeBtn = document.getElementById("analyze-btn");
 const clearBtn = document.getElementById("clear-btn");
 const errorMessage = document.getElementById("error-message");
 const loading = document.getElementById("loading");
+const mockNote = document.getElementById("mock-note");
 
 const resultSection = document.getElementById("result");
 const resultTitle = document.getElementById("result-title");
@@ -35,8 +36,8 @@ const reportsEmpty = document.getElementById("reports-empty");
 //
 // POST /api/analyze  ->  {
 //   title, category, severity, priority,
-//   reproductionSteps: [string],
-//   missingInformation: [string],
+//   reproduction_steps: [string],
+//   missing_information: [string],
 //   suggestions: [string]
 // }
 //
@@ -111,13 +112,13 @@ function mockAnalyze(description) {
     category: category,
     severity: severity,
     priority: priority,
-    reproductionSteps: [
+    reproduction_steps: [
       "Open the application in a supported browser.",
       "Navigate to the page or feature mentioned in the report.",
       "Perform the action described by the user.",
       "Observe the unexpected behavior."
     ],
-    missingInformation: [
+    missing_information: [
       "Browser name and version",
       "Operating system / device",
       "Exact error message or screenshot",
@@ -232,8 +233,8 @@ function showResult(data) {
   setBadge(resultSeverity, data.severity);
   setBadge(resultPriority, data.priority);
 
-  fillList(resultSteps, data.reproductionSteps);
-  fillList(resultMissing, data.missingInformation);
+  fillList(resultSteps, data.reproduction_steps);
+  fillList(resultMissing, data.missing_information);
   fillList(resultSuggestions, data.suggestions);
 
   resultSection.hidden = false;
@@ -349,6 +350,9 @@ bugInput.addEventListener("keydown", function (event) {
     handleAnalyze();
   }
 });
+
+// Show the "Using mock data" note only when mock mode is on
+mockNote.hidden = !USE_MOCK_DATA;
 
 // Load the list of previous reports when the page opens
 loadReports();
