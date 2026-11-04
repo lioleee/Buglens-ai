@@ -6,7 +6,7 @@
 // Set to false when your teammate's backend is ready:
 //   POST /api/analyze  -> analyze a bug description
 //   GET  /api/reports  -> list previous reports
-const USE_MOCK_DATA = true;
+const USE_MOCK_DATA = false;
 
 const API_ANALYZE_URL = "/api/analyze";
 const API_REPORTS_URL = "/api/reports";
