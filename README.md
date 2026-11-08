@@ -138,13 +138,8 @@ The colored badges work with these values: Critical, Urgent, High, Medium, Low.
 |------|--------|------|
 | Saiqa Shabbir | Saiqa-Capricon | Frontend |
 | Sakina Mazhar | smk517 | Backend (Node.js, Express, MySQL) |
+|Liba tayyab    |liolee  | testing|
+|Anum Rehman    |planning|
+|Alisha Noman | documentation|
 
 
-## Limitations
-
-- The frontend uses mock data right now.
-- The frontend is not connected to the backend yet.
-- The frontend is not connected to the AI yet.
-- The analysis you see now is fake. It is not real AI output.
-- Fake reports are not saved after a page reload.
-- The API format above is what the frontend expects. The backend must match it. [TO BE CONFIRMED]
