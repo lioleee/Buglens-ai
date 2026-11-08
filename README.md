@@ -32,7 +32,7 @@ This README is based on the frontend code. Backend and AI details are marked [TO
 |------|------------|
 | Frontend | HTML, CSS, JavaScript (plain, no frameworks) |
 | Backend | Node.js, Express, MySQL |
-| AI | [TO BE CONFIRMED] |
+
 
 ## Setup
 
@@ -57,7 +57,7 @@ PORT
 
 Set your own values. Do not commit the `.env` file.
 
-Backend install and start commands: [TO BE CONFIRMED]
+Backend install and start commands: 
 
 ## Usage
 
@@ -137,8 +137,8 @@ The colored badges work with these values: Critical, Urgent, High, Medium, Low.
 | Name | GitHub | Role |
 |------|--------|------|
 | Saiqa Shabbir | Saiqa-Capricon | Frontend |
-| [TO BE CONFIRMED] | smk517 | Backend (Node.js, Express, MySQL) |
-| [TO BE CONFIRMED] | [TO BE CONFIRMED] | [TO BE CONFIRMED] |
+| Sakina Mazhar | smk517 | Backend (Node.js, Express, MySQL) |
+
 
 ## Limitations
 
